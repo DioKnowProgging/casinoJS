@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<style>
+   a {text-decoration: none !important;}
+</style>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>roulette</title>
+      <!-- Latest compiled and minified CSS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+      <style>
+         body{
+            background-image:url(static/main/img/b.jpg);
+            background-attachment: fixed
+         }
+         </style>
+         </head>
+         <body>
+            <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="background-color:#000000; color:#0000; font-size: 20px;">
+               <div class="container">
+                  <a class="navbar-brand" style="color:#CCCCCC;  font-size: 20px; margin-left: 20px"
+                  href="{% url 'home' %}">
+                  Home
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav navbar-nav mr-auto" >
+                     <li class="nav-item mx-2"><a class="navbar-link"style="color:#CCCCCC;" href="{% url 'forum' %}"> Forum </a></li>
+                     <li class="nav-item mx-2"><a class="navbar-link"style="color:#CCCCCC;" href="admin">Admin</a></li>
+                  </ul>
+                  <ul class="navbar-nav float-right justify-content-end navbar-right "  >
+                     <li class="nav-item float-right"><a class="navbar-link"style="color:#CCCCCC;" href="profile.html"><img src="static/main/img/user.png " width="35" height="35" class="border1" /> </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="container">
+            <div class="container">
+               <div class="jumbotron" style="background-color:#000000; opacity:0.9; color:#CCCCCC;">
+                  <div class="roulette">
+                     <canvas id='canvas' width='1000' height='350'>
+                         Canvas not supported, use another browser.
+                     </canvas>  
+                 </div> 
+                 <div class="btn-block">
+                    <button class="spin_button">SPIN</button>
+               </div>
+               </div>
+               <div class="jumbotron row" style="background-color:#000000; opacity:0.9; color:yellow; font-size: 25px; font-weight: bold;">
+                  <div class="col-3 text-center ">
+                     <a href="blackjack.html"><img class="" src="static/main/img/blackjack.png"  width="200" height="200" /></a>
+                  </div>
+                  <div class="col-3 text-center">
+                     <a href="roulette.html"><img src="static/main/img/roulette.png"  width="200" height="200" /></a>
+                  </div>
+                  <div class="col-3 text-center">
+                     <a href="horserace.html"><img src="static/main/img/horserace.png"  wisdth="200" height="200" /></a>
+                  </div>
+                  <div class="col-3 text-center">
+                     <a href="slot.html"><img src="static/main/img/slottica.png"  width="200" height="200" /></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <script src="./js/Winwheel.min.js"></script>
+         <script src="./js/script.js"></script>
+      </body>
+      </html>
